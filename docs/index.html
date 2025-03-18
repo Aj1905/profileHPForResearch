@@ -1,334 +1,563 @@
 <!DOCTYPE html>
-
 <html lang="ja">
-
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>The Scientist: Jun Akita</title>
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1/dist/viewport-extra.min.js"></script>  
-    <script>new ViewportExtra(375)</script>
-
-    <link rel="shortcut icon" href="aj.jpg">
-
-    <link rel="stylesheet" href="file5.css"> 
-    <link rel="stylesheet" href="file6.css">
-    <link rel="stylesheet" href="file7.css">
-    <link rel="stylesheet" href="file10.css">
-    <link rel="stylesheet" href="file11.css">
-    <link rel="stylesheet" href="file12.css">
-    <link rel="stylesheet" href="app.css">
-    <link rel="stylesheet" href="my.css">
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
-
-    <link rel='dns-prefetch' href='//www.google.com' />
-    <link rel='dns-prefetch' href='//s.w.org' />
-    <script type="text/javascript">window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.vext.co.jp\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.9.8"}};/*! This file is auto-generated */!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);</script>
-    <style type="text/css">img.wp-smiley,img.emoji {
-                                                    display: inline !important;
-                                                    border: none !important;
-                                                    box-shadow: none !important;
-                                                    height: 1em !important;
-                                                    width: 1em !important;
-                                                    margin: 0 0.07em !important;
-                                                    vertical-align: -0.1em !important;
-                                                    background: none !important;
-                                                    padding: 0 !important;
-                                                    }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ライムピクチャーズ | 写真スタジオ</title>
+    <!-- スマートフォン用のスタイルシート -->
+    <link rel="stylesheet" href="style.css" media="screen and (max-width: 768px)">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('/api/placeholder/1200/600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 2rem 0;
+            position: relative;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .phone {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .hours {
+            font-size: 0.8rem;
+        }
+        
+        .header-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header-content h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .header-content p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: #5a7d2f;
+            color: white;
+        }
+        
+        .btn-secondary {
+            background-color: white;
+            color: #333;
+        }
+        
+        /* News Section */
+        .news-section {
+            padding: 2rem 0;
+            background-color: #f9f9f9;
+        }
+        
+        .news-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .news-title h2 {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .news-triangle {
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid #dbb100;
+        }
+        
+        .news-list {
+            margin-bottom: 2rem;
+        }
+        
+        .news-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .news-date {
+            flex: 0 0 120px;
+        }
+        
+        .news-label {
+            flex: 0 0 100px;
+            background-color: #5a7d2f;
+            color: white;
+            text-align: center;
+            padding: 0.3rem;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+        
+        .news-text {
+            flex: 1;
+        }
+        
+        .news-button {
+            text-align: center;
+        }
+        
+        .btn-outline {
+            border: 1px solid #333;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title img {
+            width: 30px;
+            height: 30px;
+            margin-right: 1rem;
+        }
+        
+        .section-title h2 {
+            font-size: 1.8rem;
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .feature {
+            flex: 1;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #5a7d2f;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-content {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .feature-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 4rem 0;
+            background-color: #f9f9f9;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        
+        .service {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        /* Staff Section */
+        .staff-section {
+            padding: 4rem 0;
+            background-color: #fff;
+        }
+        
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .staff-card {
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .staff-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .staff-info {
+            padding: 1rem;
+        }
+        
+        .staff-name {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        .staff-position {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        .staff-button {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        /* Usage Section */
+        .usage-section {
+            padding: 4rem 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .usage-text {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 4rem 0 2rem;
+            background-color: #fff;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-link {
+            font-size: 0.9rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .features, .staff-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css'  href='file8.css' type='text/css' media='all' /> 
-    <style id='global-styles-inline-css' type='text/css'>body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}</style>
-    <link rel='stylesheet' id='contact-form-7-css'  href='file9.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='old-theme-style-sp-css'  href='fileA.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='old-theme-style-contents-css'  href='fileB.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='old-theme-style-common-css'  href='fileC.css' type='text/css' media='all' />
-    <link rel="https://api.w.org/" href="https://www.vext.co.jp/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vext.co.jp/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.vext.co.jp/wp-includes/wlwmanifest.xml" /> 
-
-    <!-- file3.css,file4.cssが読み込まれていない -->
-  </head>
-
-  <body class="home blog">
-    <header id="js-header" class="header js-header">
-      <div class="header__inner js-header-inner">
-        <h1>          
-          <img src="waseda.jpg" alt="Waseda University" class="header__logo__image">
-        </h1> 
-        <nav class="header__menu js-header-menu">
-          <ul class="header__nav"></ul>
-          <ul class="header__buttons">
-            <li class="header__buttons__item header__buttons__item--user"></li>
-            <li class="header__buttons__item header__buttons__item--contact"></li>
-          </ul>
-        </nav>
-      </div>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo">ライムピクチャーズ</div>
+            <div class="contact-info">
+                <div class="phone">📞 042-271-8303</div>
+                <div class="hours">平日9:30～17:30・土・日・祝日10:30～18:00</div>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>かけがえのない今、この瞬間を写真に。</h1>
+            <p>大切な思い出を、一生の宝物に。</p>
+            <div class="btn-container">
+                <a href="#" class="btn btn-primary">ログイン</a>
+                <a href="#" class="btn btn-secondary">初めての方はこちら</a>
+            </div>
+        </div>
     </header>
 
-
-    <div class="wrap js-wrap">
-      <main data-barba="wrapper" id="barba-wrapper" class="main js-main">
-        <div data-barba="container" data-barba-namespace="page-home" id="js-page-container" class="barba-container" data-group="page-home">
-          <div class="mv">
-            <div class="canvas__wrapper" id="js-canvas__wrapper">
-              <canvas class="canvas" id="js-canvas"></canvas>
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-title">
+                <div class="news-triangle"></div>
+                <h2>お知らせ</h2>
             </div>
-            <div class="mv__copy">
-              <p class="mv__copy-sub">
-                Science for Humans<br>-science and progress not speak as loud as my heart-
-              </p>
+            <div class="news-list">
+                <div class="news-item">
+                    <div class="news-date">2024.11.06</div>
+                    <div class="news-label">お知らせ</div>
+                    <div class="news-text">【営業案内】友フォトキャンペーン❤️</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2024.11.06</div>
+                    <div class="news-label">お知らせ</div>
+                    <div class="news-text">【営業案内】友フォトキャンペーン❤️</div>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2024.11.06</div>
+                    <div class="news-label">お知らせ</div>
+                    <div class="news-text">あいうえおあいうえおあいうえおあいうえおあいうえおあいうえお...</div>
+                </div>
             </div>
-            <div class="mv__rect">
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
-              <div class="mv__rect-block"></div>
+            <div class="news-button">
+                <a href="#" class="btn-outline">お知らせ一覧を見る</a>
             </div>
-            <div class="information-bar information-bar--mv">
-              <section class="information-bar__box">
-                <h2 class="information-bar__heading">Jun Akita</h2>
-                <div class="information-bar__content">
-                  <p>
-                    <a href='//www.waseda.jp'>Waseda University</a>, Faculty of Science and Engineering<br>Department of Mathematics, 3rd year(2025/2/19)
-                  </p> 
-                </div>
-              </section>
-            </div>
-          </div>
-
-          <section class="section-product section-product--margin">
-            <div class="section-product__title">
-              <h2 class="heading js-heading-animation">
-                <div class="heading__main">Who&nbsp;I&nbsp;am</div>
-              </h2>
-            </div>
-            <div class="section-product__cards section-product__cards--margin">
-              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
-                <div class="section-product__cards__item__bg">
-                  <div class="section-product__cards__item__bg__inner">
-                    <div class="section-product__cards__item__bg__image" style="background-image: url('河津.jpg');"></div>
-                    <div class="section-product__cards__item__bg__mask">
-
-                    </div>
-                  </div>
-                </div>
-                <div class="section-product__cards__item__content">
-                  <p class="section-product__cards__item__status">
-                    <span class="section-product__cards__item__status__number">01</span>
-                  </p>
-                  <h3 class="section-product__cards__item__title">Jun Akita</h3>
-                  <div class="section-product__cards__item__message">
-                    <p>
-                      I'm Jun Akita, a third year undergraduate student at Waseda University, majoring in Mathematics with a minor in Computer Science. Currently part of Usuba Laboratory. Researching logic and foundation of mathematics, about what proof is. I hope to research foundation of AI in graduate school, particularly the differences between inference and deduction.<br>
-                      I enjoy delving into a wide range of topics, from science like mathematics, physics and biology, to humanities like philosophy and literature. I also love watching animation, playing musical instruments and playing sports.<br>  
-                      I want to enjoy all things around the world in two ways, through my body and through my brain.<br><br>
-                      I'm always eager to connect with like-minded individuals and welcoming discussions at any time. Please feel free to reach out from my socials!
-                    </p>          
-                  </div>  
-                </div>
-              </article>
-
-              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
-                <div class="section-product__cards__item__bg">
-                  <div class="section-product__cards__item__bg__inner">
-                    <div class="section-product__cards__item__bg__image" style="background-image: url('waseda_view.jpg');"></div>
-                    <div class="section-product__cards__item__bg__mask">
-
-                    </div>
-                  </div>
-                </div>
-                <div class="section-product__cards__item__content">
-                  <p class="section-product__cards__item__status">
-                    <span class="section-product__cards__item__status__number">02</span>
-                  </p>
-                  <h3 class="section-product__cards__item__title">Education</h3>
-                  <div class="section-product__cards__item__message">
-                    <p>
-                      Here is my educational background.
-
-                      <br><br>
-
-                      <li>
-                        2026/3 Bachelor of Mathematics (expected)
-                      </li>  
-                    </p>      
-                  </div>
-                </div>
-              </article>
-      
-              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
-                <div class="section-product__cards__item__bg">
-                  <div class="section-product__cards__item__bg__inner">
-                    <div class="section-product__cards__item__bg__image" style="background-image: url('achieving.jpg');"></div>
-                    <div class="section-product__cards__item__bg__mask">
-
-                    </div>
-                  </div>
-                </div>
-                <div class="section-product__cards__item__content">
-                  <p class="section-product__cards__item__status">
-                    <span class="section-product__cards__item__status__number">03</span>
-                  </p>
-                  <h3 class="section-product__cards__item__title">Resume</h3>
-                  <div class="section-product__cards__item__message">
-                    <p>
-                      Here is my work experience.
-
-                      <br><br>
-                      <li>
-                        2022/10~ Founded Nagare
-                      </li>
-                      <li>
-                        2023/12~ <a href='//stardy.co.jp'>株式会社stardy</a>(Tokyo) Internship as an engineer
-                      </li>
-                      <li>
-                        2024/1~ Founded Acies 
-                      </li>
-                      <li>
-                        2024/12~ <a href='//www.alanse.co.jp'>Alanse</a>(Hokkaido) Internship as an engineer
-                      </li>
-                      <li>
-                        2025/1~  <a href='//www.appen.com'>Appen</a>(Australia),<a href='//outlier.ai'>Outlier</a>(Australia) Internship
-                      </li>
-                    </p>          
-                  </div>
-                </div>
-              </article>
-
-              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
-                <div class="section-product__cards__item__bg">
-                  <div class="section-product__cards__item__bg__inner">
-                    <div class="section-product__cards__item__bg__image" style="background-image: url('curiosity.jpg');"></div>
-                    <div class="section-product__cards__item__bg__mask">
-
-                    </div>
-                  </div>
-                </div>
-                <div class="section-product__cards__item__content">
-                  <p class="section-product__cards__item__status">
-                    <span class="section-product__cards__item__status__number">04</span>
-                  </p>
-                  <h3 class="section-product__cards__item__title">Research Interest</h3>
-                  <div class="section-product__cards__item__message">
-                    <p>
-                      I'm mainly interested in fields related with caluculation.
-                      
-                      <br><br>
-
-                      <li>
-                        axiomatic set theory
-                      </li>
-                      <li>
-                        category theory
-                      </li>
-                      <li>
-                        computation theory
-                      </li>
-                      <li>
-                        relevance logics
-                      </li>
-                      <li>
-                        statistics
-                      </li>
-                      <li>
-                        philosophy of mathematics
-                      </li>
-                    </p>          
-                  </div>
-                </div>
-              </article>
-
-              <article class="section-product__cards__item js-scroll-show" data-hook=".7" data-hook-sp=".7">
-                <div class="section-product__cards__item__bg">
-                  <div class="section-product__cards__item__bg__inner">
-                    <div class="section-product__cards__item__bg__image" style="background-image: url('universebrain.jpg');"></div>
-                    <div class="section-product__cards__item__bg__mask">
-
-                    </div>
-                  </div>
-                </div>
-                <div class="section-product__cards__item__content">
-                  <p class="section-product__cards__item__status">
-                    <span class="section-product__cards__item__status__number">05</span>
-                  </p>
-                  <h3 class="section-product__cards__item__title">My Goal</h3>
-                  <div class="section-product__cards__item__message">
-                    <p> 
-                      My research goal is to draw a Venn diagram of what AI can do, what computers can do, and what humans can do, in order to clarify their differences. Do humans possess an irreplaceable and profound power, or are they merely a finite type of machine? This is what I want to understand.
-                      
-                      <br><br>
-
-                      There are three things I need to do: 
-                      <li>
-                        Understand what it means to compute through mathematics and logic.
-                      </li>
-                      <li>
-                        Understand the capabilities of AI through data science.
-                      </li>
-                      <li>
-                        Understand humans deeply through real-life experiences.
-                      </li>
-                    
-                      <br><br>
-
-                      I do not believe that the world is so simple that everything can be fully explained within a mere 10,000 years of history.
-                    </p>          
-                  </div>
-                </div>
-              </article>
-
-            </div>
-          </section>
         </div>
-      </main>
-    </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="/api/placeholder/30/30" alt="植物アイコン">
+                <h2>LIMEについて</h2>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-number">01</div>
+                    <div class="feature-title">とにかりも丁寧な撮影と1日4組様限定</div>
+                    <div class="feature-content">他のお客様と撮影の予約を重ねて入れていないので、一組一組丁寧な撮影のご対応が可能！</div>
+                    <img src="/api/placeholder/300/200" class="feature-image" alt="緑あふれる撮影スポット">
+                </div>
+                <div class="feature">
+                    <div class="feature-number">02</div>
+                    <div class="feature-title">過去の豊富な実績</div>
+                    <div class="feature-content">弊社は過去に幼稚園のイベント写真を3000枚35年手がけてきた実績がございます。</div>
+                    <img src="/api/placeholder/300/200" class="feature-image" alt="赤ちゃんの写真">
+                </div>
+                <div class="feature">
+                    <div class="feature-number">03</div>
+                    <div class="feature-title">ライムのこだわり</div>
+                    <div class="feature-content">フォトスペースライムでは、直、香りにも徹底的にこだわっています。</div>
+                    <img src="/api/placeholder/300/200" class="feature-image" alt="木製の床">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer"></footer>
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="/api/placeholder/30/30" alt="カメラアイコン">
+                <h2>事業内容</h2>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <img src="/api/placeholder/400/250" class="service-image" alt="アルバム写真">
+                    <div class="service-content">
+                        <h3 class="service-title">アルバム制作</h3>
+                        <p class="service-description">高品質なアルバムを丁寧に制作し、大切な思い出を美しく残します。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/api/placeholder/400/250" class="service-image" alt="ドローン">
+                    <div class="service-content">
+                        <h3 class="service-title">ドローン撮影</h3>
+                        <p class="service-description">ドローン撮影で迫力ある空撮映像を高品質に撮供します。</p>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="/api/placeholder/400/250" class="service-image" alt="選挙ポスター">
+                    <div class="service-content">
+                        <h3 class="service-title">選挙ポスター</h3>
+                        <p class="service-description">候補者の魅力を引き出す選挙ポスターを、高品質かつ迅速に制作します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Staff Section -->
+    <section class="staff-section">
+        <div class="container">
+            <div class="section-title">
+                <img src="/api/placeholder/30/30" alt="スタッフアイコン">
+                <h2>スタッフ紹介</h2>
+            </div>
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <img src="/api/placeholder/250/250" class="staff-image" alt="白洲健太郎">
+                    <div class="staff-info">
+                        <div class="staff-name">Shirasu Kentarou</div>
+                        <div class="staff-position">チーフフォトグラファー</div>
+                    </div>
+                </div>
+                <div class="staff-card">
+                    <img src="/api/placeholder/250/250" class="staff-image" alt="伊藤美恵">
+                    <div class="staff-info">
+                        <div class="staff-name">Itou Mie</div>
+                        <div class="staff-position">フォトグラファー</div>
+                    </div>
+                </div>
+                <div class="staff-card">
+                    <img src="/api/placeholder/250/250" class="staff-image" alt="新明智朗">
+                    <div class="staff-info">
+                        <div class="staff-name">Atarashi Tomoaki</div>
+                        <div class="staff-position">フォトグラファー</div>
+                    </div>
+                </div>
+                <div class="staff-card">
+                    <img src="/api/placeholder/250/250" class="staff-image" alt="荒川秀樹">
+                    <div class="staff-info">
+                        <div class="staff-name">Arakawa Hideki</div>
+                        <div class="staff-position">スタジオフォトグラファー</div>
+                    </div>
+                </div>
+            </div>
+            <div class="staff-button">
+                <a href="#" class="btn-outline">スタッフ紹介へ</a>
+            </div>
+        </div>
+    </section>
 
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-    <script type='text/javascript' id='contact-form-7-js-extra'>
-      /* <![CDATA[ */
-      var wpcf7 = {"api":{"root":"https:\/\/www.vext.co.jp\/wp-json\/","namespace":"contact-form-7\/v1"}};
-      /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6' id='contact-form-7-js'></script>
-    <script type='text/javascript' id='wpcf7-recaptcha-js-extra'>
-      /* <![CDATA[ */
-      var wpcf7_recaptcha = {"sitekey":"6Led1tchAAAAADMJ1wneJW46jQigTXp1R0uhMZFX","actions":{"homepage":"homepage","contactform":"contactform"}};
-      /* ]]> */
-    </script>
-    <script type='text/javascript' src='https://www.vext.co.jp/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.5.6' id='wpcf7-recaptcha-js'></script>
-    <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>
-    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/lib.js?v=1.4.2"></script>
-    <script src="https://www.vext.co.jp/wp-content/themes/vext-corp-2019/assets/js/app.js?v=1.4.2"></script>
+    <!-- Usage Section -->
+    <section class="usage-section">
+        <div class="container">
+            <div class="section-title" style="justify-content: center;">
+                <h2>ご利用方法について</h2>
+            </div>
+            <div class="usage-text">
+                何かお困りごとがあればこちらからお問い合わせください
+            </div>
+            <a href="#" class="btn btn-primary" style="width: 300px;">お問い合わせはこちら</a>
+        </div>
+    </section>
 
-    
-
-  </body>
-
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">ホーム</a>
+                <a href="#" class="footer-link">お知らせ</a>
+                <a href="#" class="footer-link">スタッフ紹介</a>
+                <a href="#" class="footer-link">お問い合わせ</a>
+                <a href="#" class="footer-link">特定商取引に関する記載</a>
+            </div>
+            <div class="copyright">
+                © 2025 LIME. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
